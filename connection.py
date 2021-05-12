@@ -48,15 +48,15 @@ class connection(object):
         ports = serial.tools.list_ports.comports()
         for p in ports:
 
-            a = str(p)
-            print(a)
+            a = str(p) #Changes bytes to string to display serial ports in option
+            #print(a)
             b = a.split()[0]
-            self.serial_port.addItem(b)
+            self.serial_port.addItem(b) #This is where it creates item for the dropdown menu
 
     def connect_to_Cisco(self):
 
-        comm     = self.serial_port.currentText()
-        baudrate = self.baudrate.text()
+        comm     = self.serial_port.currentText() #Get com number from the user input from the GUI
+        baudrate = self.baudrate.text() #get the baudrate from the user
 
         ser  = serial.Serial(port = comm, baudrate=baudrate)
 
