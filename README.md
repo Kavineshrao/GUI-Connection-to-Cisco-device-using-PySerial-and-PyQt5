@@ -11,3 +11,7 @@ Simple output from the running script :
 
 
 ![image](https://user-images.githubusercontent.com/68094829/117988962-7d022880-b36e-11eb-86c1-5705c4b9d1fe.png)
+
+
+
+REFERENCE : https://semfionetworks.com/blog/establish-a-console-connection-within-a-python-script-with-pyserial/
